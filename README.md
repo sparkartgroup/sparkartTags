@@ -13,7 +13,7 @@ In order to use sparkartTags you'll need to include jQuery and the jquery.sparka
 ```html
 <input id="tags" type="text" value="javascript,jquery" />
 <script>
-	$('#tags').tkTags();
+	$('#tags').sparkartTags();
 </script>
 ```
 
@@ -24,7 +24,7 @@ Existing values for the input will be converted into tags automatically.
 ```html
 <input id="tags" type="text" value="javascript,jquery" />
 <script>
-	$('#tags').tkTags({
+	$('#tags').sparkartTags({
 		value: 'ruby,rails',
 		placeholder: 'Add a language'
 	});
@@ -39,7 +39,7 @@ If `value` is manually specified, it will override the value of the input.
 <input id="tags" type="text" />
 <script>
 	var languages = ['javascript','ruby','python','php'];
-	$('#tags').tkTags({
+	$('#tags').sparkartTags({
 		suggest: {
 			source: languages
 		}
