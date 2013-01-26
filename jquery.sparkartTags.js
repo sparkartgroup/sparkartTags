@@ -182,7 +182,7 @@ Sparkart Tags
 
 				data.tags = data.tags.concat( tags );
 				$this.sparkartTags('update');
-				if( !method_options.silent && tags.length ) $this.trigger( 'add', tags );
+				if( !method_options.silent && tags.length ) $this.trigger( 'addtag', tags );
 				
 			});
 			
@@ -210,7 +210,7 @@ Sparkart Tags
 				
 				$this.sparkartTags('update');
 				
-				if( !method_options.silent && tags.length ) $this.trigger( 'remove', tags );
+				if( !method_options.silent && tags.length ) $this.trigger( 'removetag', tags );
 				
 			});
 		
